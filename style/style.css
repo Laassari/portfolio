@@ -1,0 +1,187 @@
+/* General rules */
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100vh;
+	background-color: #f8f8f8;
+	font-family: arial, verdana, sans-serif;
+}
+
+
+.wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* main nav */
+
+nav {
+	width: 100%;
+	height: 50px;
+	background-color: #252A34;
+	overflow: hidden;
+}
+
+/* main logo */
+
+nav .logo img{
+	height: 100%;
+}
+
+nav .logo {
+	height: 100%;
+	float: left;
+}
+
+/* main menu */
+
+nav .menu {
+	float: right;
+	line-height: 50px;
+	height: 100%;
+}
+
+nav .menu li {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+nav .menu li:last-of-type {
+	padding-right: 27px;
+}
+
+nav .menu li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* start main view*/
+
+main {
+	min-height: calc(100vh - 50px);
+	background-color: #e0e0e0;
+	position: relative;
+}
+
+main h1 {
+	color: #7b7b7b;
+	text-align: center;
+	padding: 54px 0;
+	font-family: roboto;
+	font-weight: 500;
+	margin: 0;
+}
+
+main .main-info {
+	margin-right: auto;
+	margin-left: auto;
+	width: 85%;
+	min-height: 50vh;
+	margin-top: 31px;
+}
+
+main .main-info p {
+	margin-top: 18px;
+	color: #252a34;
+	font-size: 28px;
+	width: 50%;
+	display: inline-block;
+	padding-bottom: 34px;
+	line-height: 1.25;
+}
+
+main .main-info img {
+	max-width: 34%;
+	float: right;
+	padding: 2px;
+}
+
+main .main-info span {
+	width: 132px;
+	background-color: rgba(3, 169, 244, 0.18);
+	display: inline-block;
+	padding: 11px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 34px;
+}
+
+main .main-info span i {
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+main .main-info span a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+main a i {
+	font-size: 3em !important;
+	position: absolute;
+	bottom: 12px;
+	right: 50%;
+	color: #252a34;
+}
+
+/* Start About Section */
+
+.about-me {
+	background-color: #e0e0e0;
+	min-height: 100vh;
+}
+
+.about-me h1 {
+	text-align: center;
+	font-size: 2.5em;
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+.about-me .part-me {
+	width: 68%;
+	margin: auto;
+}
+.about-me .part-me img {
+	width: 30%;
+	padding-top: 19px;
+}
+.about-me .part-me .info-me {
+	width: 52%;
+	float: right;
+	margin-top: 50px;
+}
+.about-me .part-me .info-me h2 {
+	padding-bottom: 29px;
+}
+.about-me .part-me .info-me p {
+	line-height: 1.4;
+}
+
+.about-me .skills h2 {
+	text-align: center;
+	margin: 64px;
+}
+
+.about-me .skills .skll {
+	margin-left: 2%;
+	margin-bottom: 62px;
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+}
+
+.about-me .skills .skll img {
+height: 116px;
+width: 125px;
+}
+
+.about-me .skills .skll i {
+	font-size: 8em;
+}
