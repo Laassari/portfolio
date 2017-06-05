@@ -5,6 +5,22 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+li {
+    list-style: none;
+}
+a {
+	color: inherit;
+}
+
+a:hover, a:focus, a:active {
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+}
+
+	/*overiding normalize */
+h1 {
+	margin-top: 0;
+}
 
 html {
 	min-height: 100vh;
@@ -72,7 +88,7 @@ main h1 {
 	color: #7b7b7b;
 	text-align: center;
 	padding: 54px 0;
-	font-family: roboto;
+	font-family: arial;
 	font-weight: 500;
 	margin: 0;
 }
@@ -178,10 +194,92 @@ main a i {
 }
 
 .about-me .skills .skll img {
-height: 116px;
-width: 125px;
+height: 116px;
+width: 125px;
 }
 
 .about-me .skills .skll i {
-	font-size: 8em;
+	
+font-size: 8em;
 }
+
+/*start Projects section*/
+.projects {
+	background-color: #e0e0e0;
+	min-height: 100vh;
+}
+.projects h1 {
+	text-align: center;
+	padding: 20px;
+}
+
+.projects .prjct {
+	height: 322px;
+	border: 1px solid;
+	position: relative;
+	/* overflow: hidden; */
+}
+.projects .prjct > div{
+	display: inline-block;
+}
+
+.projects .prjct .prjct-description {
+	background-color: #fff;
+	width: 32%;
+	height: 100%;
+	position: relative;
+}
+.projects .prjct .prjct-right{
+	float: right;
+}
+
+.projects .prjct .prjct-description:not(.prjct-right):after {
+	content: "";
+	width: 76px;
+	height: 100%;
+	position: absolute;
+	right: -100px;
+	top: 0;
+	border-top: 321px solid #FFf;
+	border-right: 100px solid transparent;
+}
+
+/*for the project with image to the left*/
+.projects .prjct .prjct-right:after {
+	content: "";
+	width: 76px;
+	height: 100%;
+	position: absolute;
+	left: -100px;
+	top: -1px;
+	border-top: 321px solid transparent;
+	border-right: 100px solid #fff;
+}
+
+.projects .prjct .prjct-description h3 {	
+	margin: 22px 0 5px 18px;
+	padding-bottom: 10px;
+}
+.projects .prjct .prjct-description li {
+padding: 5px 0 5px 16px;
+}
+.projects .prjct-image {
+	width: 68%;
+	height: 100%;
+	float: right;
+} 
+.projects .prjct-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.projects .project-separator {
+	height: 5px;
+	width: 100%;
+	margin: 13px 0;
+	border-top: 1px dashed black;
+	border-bottom: 1px dashed black;
+}
+
+
+/*Contact Me section*/
