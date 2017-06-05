@@ -282,3 +282,68 @@ padding: 5px 0 5px 16px;
 
 
 /*Contact Me section*/
+.contact {
+	background-color: #e0e0e0;
+	min-height: 100vh;
+}
+
+.contact h1 {
+	text-align: center;
+	padding: 20px;
+}
+
+.contact .contact-container {
+	/* min-height: 500px; */
+	width: 100%;
+	height: 331px;
+}
+
+.contact .contact-container .form {
+	width: 67%;
+	border-right: 3px solid #655c5c;
+	float: left;
+	height: 100%;
+	text-align: center;
+}
+
+.red-asteristic {
+	color: red;
+}
+.contact .contact-container .form form {
+	margin-top: 12px;
+}
+.contact .contact-container .form form > div {
+	width: 50%;
+
+    margin: 0 auto;
+    text-align: right;
+}
+.contact .contact-container .form form > div >label {
+    float: left;
+    line-height: 2.3;
+    font-size: 1.1em;
+    color: #333333;
+}
+
+.contact form > div input,
+.contact form > div textarea {
+	width: 304px;
+	border-radius: 5px;
+	padding: 10px 0 10px 5px;
+	border-radius: 6px;
+	border: 1px solid #636060;
+}
+
+.contact form input[type="submit"] {
+	width: 20%;
+	padding: 3px 2px;
+	background-color: #fff;
+	height: 42px;
+	border-radius: 6px;
+	border: 1px solid #636060;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #333;
+	letter-spacing: 0.5px;
+	margin: 12px 0 5px 85px;
+}
