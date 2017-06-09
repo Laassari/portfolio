@@ -284,13 +284,15 @@ padding: 5px 0 5px 16px;
 
 /*Contact Me section*/
 .contact {
+	position: relative;
 	background-color: #e0e0e0;
-	min-height: 100vh;
+	min-height: 84vh;
 }
 
 .contact h1 {
 	text-align: center;
 	padding: 20px;
+	padding-top: 67px;
 }
 
 .contact .contact-container {
@@ -314,9 +316,8 @@ padding: 5px 0 5px 16px;
 }
 .contact .contact-container .form form > div {
 	width: 50%;
-
-    margin: 0 auto;
-    text-align: right;
+	margin: 0 auto;
+	text-align: right;
 }
 .contact .contact-container .form form > div >label {
     float: left;
@@ -345,4 +346,26 @@ padding: 5px 0 5px 16px;
 	color: #333;
 	letter-spacing: 0.5px;
 	margin: 12px 0 5px 85px;
+}
+
+/*socal link part*/
+
+.contact .social {
+	width: 33%;
+	float: left;
+	height: 331px;
+}
+.contact .social >div {
+	height: 20%;
+	padding-left: 33px;
+	font-size: 1.3em;
+	margin-top: 14px;
+	line-height: 3.1;
+}
+
+/*footer section*/
+footer {
+	position: relative;
+	height: 78px;
+	background-color: #252a34;
 }
