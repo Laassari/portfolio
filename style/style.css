@@ -5,9 +5,10 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-li {
-    list-style: none;
-}
+
+.clearFix { clear: both;}
+
+li { list-style: none; }
 a {
 	color: inherit;
 	text-decoration: none;
@@ -19,9 +20,7 @@ a:hover, a:focus, a:active {
 }
 
 	/*overiding normalize */
-h1 {
-	margin-top: 0;
-}
+h1 { margin-top: 0; }
 
 html {
 	min-height: 100vh;
@@ -62,7 +61,22 @@ nav .menu {
 	line-height: 50px;
 	height: 100%;
 }
+nav .menu i {
+	display: none;
+	color: #ddd;
+	line-height: 1
+	;font-size: 1.7em;
+	margin: 0 16px;
+	border-radius: 16%;
+	border: 1px solid;
+	padding: 4px;
+}
 
+nav .menu i:hover {
+	background-color: #dedede;
+	cursor: pointer;
+	color: #000;
+}
 nav .menu li {
 	display: inline-block;
 	padding-right: 15px;
@@ -75,6 +89,20 @@ nav .menu li:last-of-type {
 nav .menu li a {
 	text-decoration: none;
 	color: #fff;
+}
+
+/*main view on other screens:*/
+@media screen (max-width : 768px) { 
+	.wrapper {width: 100%;}
+	nav .menu ul {display: none;}
+	nav .menu i {display: inline-block;}
+	nav .menu i:active + ul  {display: block;}
+	nav .menu i:active + ul li {
+		display: block;
+		text-align: center;
+		background-color: #fff;
+
+	}
 }
 
 /* start main view*/
@@ -297,12 +325,11 @@ padding: 5px 0 5px 16px;
 
 .contact .contact-container {
 	width: 100%;
-	height: 331px;
+	height: 521px;
 }
 
 .contact .contact-container .form {
 	width: 67%;
-	border-right: 3px solid #655c5c;
 	float: left;
 	height: 100%;
 	text-align: center;
@@ -354,6 +381,7 @@ padding: 5px 0 5px 16px;
 	width: 33%;
 	float: left;
 	height: 331px;
+	border-left: 3px solid #655c5c;
 }
 .contact .social >div {
 	height: 20%;
