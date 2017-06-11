@@ -92,7 +92,7 @@ nav .menu li a {
 }
 
 /*main view on other screens:*/
-@media screen (max-width : 768px) { 
+@media screen (max-width: 768px) { 
 	body {
 		display: none;
 	}
@@ -393,3 +393,4 @@ footer {
 	height: 78px;
 	background-color: #252a34;
 }
+
