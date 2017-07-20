@@ -31,6 +31,7 @@ html {
 
 .wrapper {
 	width: 89%;
+	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -95,20 +96,21 @@ nav .menu li a {
 /*main view on other screens:*/
 @media (max-width: 768px) { 
 	.wrapper {width: 100%;}
-	nav .menu ul.hide-nav {display: none;}
+	nav .menu ul.hide-nav {  margin-top: -371px;}
 	nav .menu i {display: inline-block;float: right;}
 	nav .menu ul {
-		display: block;
-		width: 100%;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 50px;
-		z-index: 2;
-		text-align: center;
-		-webkit-transition: all 1s ease;
-		-o-transition: all 1s ease;
-		transition: all 1s ease;
+	display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  z-index: 2;
+  text-align: center;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-top: 0px;
 	}
 	nav .menu  li, nav .menu li:last-of-type {
 		display: block;
@@ -155,9 +157,10 @@ main .main-info p {
 }
 
 main .main-info img {
-	max-width: 34%;
-	float: right;
-	padding: 2px;
+    max-width: 34%;
+    padding: 2px;
+    margin: 0 auto;
+    float: right;
 }
 
 main .main-info span {
@@ -188,7 +191,54 @@ main a .fa {
 	right: 50%;
 	color: #252a34;
 }
+/* screen sizes for main */
 
+@media (max-width: 992px) {
+	main {
+		background-color: #ddd;
+	}
+
+	main .main-info p {
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 686px) {
+	main .main-info p {
+		font-size: 23px;
+	    min-width: 56%;
+	}
+}
+
+@media (max-width: 500px) {
+	main h1 {
+		padding-bottom: 0;
+		font-size: 20px;
+	}
+	main .main-info p {
+		float: none;
+    width: 100%;
+    font-size: 1.2em;
+	}
+	main .main-info img{
+	text-align: center;
+    clear: both;
+    margin-right: 38%;
+	}
+	main .main-info span{
+		margin: 64px 0%;
+		width: 41%;
+		padding: 11px 0;
+	}
+	main .main-info span:first-of-type{
+		margin-right: 9%;
+	}
+}
+
+@media (max-width: 467px) {
+
+	
+}
 /* Start About Section */
 
 .about-me {
@@ -204,12 +254,13 @@ main a .fa {
 }
 
 .about-me .part-me {
-	width: 68%;
+width: 89%;
 	margin: auto;
 }
 .about-me .part-me img {
-	width: 30%;
-	padding-top: 19px;
+width: 32%;
+  padding-top: 29px;
+  margin-right: 27px;
 }
 .about-me .part-me .info-me {
 	width: 52%;
@@ -243,6 +294,39 @@ main a .fa {
 font-size: 8em;
 }
 
+/* ABout section in tablet/mobile devices  */
+
+@media (max-width:750px) {
+	.about-me .part-me {
+		width: 100%; 
+	}
+	.about-me .part-me img {
+		width: 30%;
+		min-width: 150px;
+		padding-top: 88px;
+		margin-left: 24px;
+	}
+}
+
+@media (max-width:480px) {
+.about-me .part-me .info-me {
+  margin-top: 31px;
+	padding: 0 23px;
+	width: 100%;
+  float: none;
+}
+	.about-me .part-me img {
+	display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+	}
+}
+
+@media (max-width:570px) {
+	.about-me .skills .skll {
+		width: 47%;
+	}
+}
 /*start Projects section*/
 .projects {
 	background-color: #e0e0e0;
@@ -354,15 +438,17 @@ padding: 5px 0 5px 16px;
 	margin-top: 12px;
 }
 .contact .contact-container .form form > div {
-	width: 50%;
-	margin: 0 auto;
+	width: 62%;
+	/* margin: 0 auto; */
 	text-align: right;
+	margin-left: 15%;
 }
 .contact .contact-container .form form > div >label {
     float: left;
     line-height: 2.3;
     font-size: 1.1em;
     color: #333333;
+    display: block;
 }
 
 .contact form > div input,
