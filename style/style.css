@@ -259,6 +259,7 @@ width: 89%;
 }
 .about-me .part-me img {
 width: 32%;
+  max-width: 222px;
   padding-top: 29px;
   margin-right: 27px;
 }
@@ -408,9 +409,9 @@ padding: 5px 0 5px 16px;
 
 /*Contact Me section*/
 .contact {
-	position: relative;
-	background-color: #e0e0e0;
-	min-height: 84vh;
+  position: relative;
+  background-color: #e0e0e0;
+  min-height: 526px;
 }
 
 .contact h1 {
@@ -420,14 +421,10 @@ padding: 5px 0 5px 16px;
 }
 
 .contact .contact-container {
-	width: 100%;
-	height: 521px;
+
 }
 
 .contact .contact-container .form {
-	width: 67%;
-	float: left;
-	height: 100%;
 	text-align: center;
 }
 
@@ -473,26 +470,20 @@ padding: 5px 0 5px 16px;
 	margin: 12px 0 5px 85px;
 }
 
-/*socal link part*/
+/*footer part*/
 
-.contact .social {
-	width: 33%;
-	float: left;
-	height: 331px;
-	border-left: 3px solid #655c5c;
-	overflow: hidden;
-}
-.contact .social >div {
-	height: 20%;
-	padding-left: 33px;
-	font-size: 1.3em;
-	margin-top: 14px;
-	line-height: 3.1;
-}
-
-/*footer section*/
 footer {
-	position: relative;
-	height: 78px;
-	background-color: #252a34;
+	width: 100%;
+	background-color: #9a9a9a
 }
+footer >div {
+  padding-left: 33px;
+  font-size: 1.3em;
+  line-height: 3.1;
+  width: 40%;
+  display: inline-block;
+}
+
+/*contact section for smalller screens  */
+
+
