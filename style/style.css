@@ -108,7 +108,7 @@ nav .menu li a {
   text-align: center;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  margin-top: 0px;
+  margin-top: 0
 	}
 	nav .menu  li, nav .menu li:last-of-type {
 		display: block;
@@ -505,15 +505,15 @@ footer span {
   background-color: #4a50d2;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 6px 0px rgb(0, 0, 0);
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0);
 }
 
 footer >div {
-  padding-left: 33px;
-  font-size: 1.3em;
-  line-height: 3.1;
-  width: 40%;
-  display: inline-block;
+    font-size: 1.2em;
+    line-height: 3.1;
+    width: 24%;
+    display: inline-block;
+    text-align: center;
 }
 
 /*contact section for smalller screens  */
