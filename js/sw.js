@@ -1,13 +1,23 @@
 self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open('wittr-static-v1').then(function (cache) {
+    caches.open('static').then(function (cache) {
       return cache.addAll([
         '/',
         'js/main.js',
         'style/style.css',
         'imgs/icon.png',
-        'https://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff',
-        'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff'
+        "normalize.css",
+        "font-awesome.min.css",
+        "images/logo2.png",
+        "images/img.png",
+        "images/img.png",
+        "images/js.svg",
+        "images/ux.png",
+        "images/seo.svg",
+        "images/cert.png",
+        "images/project.png",
+        "images/project.png",
+        "images/project.png"
       ]);
     })
   )
