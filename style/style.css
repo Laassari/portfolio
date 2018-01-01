@@ -148,14 +148,15 @@ main .main-info p {
 	margin-top: 18px;
 	color: #252a34;
 	font-size: 28px;
-	width: 50%;
+	/* width: 50%; */
+	width: 44.2ch;
 	display: inline-block;
 	padding-bottom: 34px;
-	line-height: 1.25;
+	line-height: 1.55;
 }
 
 main .main-info img {
-    max-width: 34%;
+    max-width: 32%;
     padding: 2px;
     margin: 0 auto;
     float: right;
@@ -182,13 +183,7 @@ main .main-info span a {
 	font-weight: bold;
 }
 
-main a .fa {
-	font-size: 3em;
-	position: absolute;
-	bottom: 12px;
-	right: 50%;
-	color: #252a34;
-}
+
 /* screen sizes for main */
 
 @media (max-width: 992px) {
