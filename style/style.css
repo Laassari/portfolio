@@ -139,7 +139,7 @@ main h1 {
 main .main-info {
 	margin-right: auto;
 	margin-left: auto;
-	width: 85%;
+	width: 86%;
 	min-height: 50vh;
 	margin-top: 31px;
 }
@@ -547,7 +547,7 @@ footer >div {
 @media (max-width:450px) {
 	footer >div {
 		font-size: 1.1em;
-		display: block;
+		display: i;
 		margin: 0 auto;
 		width: 61%;
 	}
