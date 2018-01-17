@@ -139,7 +139,7 @@ main h1 {
 main .main-info {
 	margin-right: auto;
 	margin-left: auto;
-	width: 86%;
+	width: 93%;
 	min-height: 50vh;
 	margin-top: 31px;
 }
@@ -148,18 +148,20 @@ main .main-info p {
 	margin-top: 18px;
 	color: #252a34;
 	font-size: 28px;
-	/* width: 50%; */
-	width: 44.2ch;
+	width: 100%;
 	display: inline-block;
 	padding-bottom: 34px;
 	line-height: 1.55;
 }
 
 main .main-info img {
-    max-width: 32%;
+    max-width: 25%;
     padding: 2px;
     margin: 0 auto;
-    float: right;
+    float: left;
+    margin-right: 90px;
+    border-radius: 50%;
+    shape-outside: circle(42%);
 }
 
 main .main-info span {
@@ -246,20 +248,13 @@ main .main-info span a {
 	padding-top: 20px;
 }
 
-.about-me .part-me {
-width: 89%;
-	margin: auto;
-}
-.about-me .part-me img {
-width: 32%;
-  max-width: 222px;
-  padding-top: 29px;
-  margin-right: 27px;
-}
+.about-me .part-me {width: 72%;margin: auto;font-size: 1.1em;}
+.about-me .part-me img {width: 32%;max-width: 222px;padding-top: 12px;margin-right: 27px;float: left;shape-outside: circle(50%);}
 .about-me .part-me .info-me {
-	width: 52%;
-	float: right;
+	/* width: 52%;
+	float: right; */
 	margin-top: 50px;
+	padding-top: 17px;
 }
 .about-me .part-me .info-me h2 {
 	padding-bottom: 29px;
@@ -297,22 +292,24 @@ font-size: 8em;
 	.about-me .part-me img {
 		width: 30%;
 		min-width: 150px;
-		padding-top: 88px;
+		padding-top: 42px;
 		margin-left: 24px;
+	}
+	.about-me .part-me p{
+		padding-right: 19px;
+		padding-left: 36px;
 	}
 }
 
 @media (max-width:480px) {
 .about-me .part-me .info-me {
   margin-top: 31px;
-	padding: 0 23px;
-	width: 100%;
+  padding: 0 23px;
+  width: 100%;
   float: none;
 }
 	.about-me .part-me img {
-	display: block;
-  margin: 0 auto;
-  padding-top: 10px;
+	/* display: block; */
 	}
 }
 
