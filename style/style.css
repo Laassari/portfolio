@@ -137,11 +137,12 @@ main h1 {
 }
 
 main .main-info {
-	margin-right: auto;
-	margin-left: auto;
+	/* margin-right: auto; */
+	/* margin-left: auto; */
 	width: 93%;
 	min-height: 50vh;
-	margin-top: 31px;
+	/* margin-top: 31px; */
+	margin: 31px auto 0;
 }
 
 main .main-info p {
@@ -491,16 +492,17 @@ footer {
 
 footer span {
 	height: 30px;
-  width: 100px;
-  position: absolute;
-  top: -15px;
-  left: 46%;
-  font-size: 25px;
-  text-align: center;
-  background-color: #4a50d2;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+	width: 100px;
+	position: absolute;
+	top: -15px;
+	font-size: 25px;
+	text-align: center;
+	background-color: #4a50d2;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+	left: 57%;
+	margin-left:  -100px;
 }
 
 footer >div {
@@ -538,23 +540,25 @@ footer >div {
 	max-width: 150px;
 }
 }
-@media (max-width:570px) {
+@media (max-width:570px and min-width:451px) {
+	footer > div:first-of-type {
+		width: 24.9%;
+	}
 	footer >div {
-		/* padding-left: 5%; */
 		width: 24%;
 	}
 }
-@media (max-width:450px) {
+@media (max-width: 450px) {
 	footer >div {
 		font-size: 1.1em;
-		display: i;
+		display: inline-block;
 		margin: 0 auto;
-		width: 61%;
+		width: 45%;
 	}
 }
 @media (max-width: 550px) {
 		footer span {
 		top: -9px;
-		left: 34%;
+		/* left: 34%; */
 	}
 }
