@@ -540,8 +540,8 @@ footer >div {
 }
 @media (max-width:570px) {
 	footer >div {
-		padding-left: 5%;
-		width: 49%;
+		/* padding-left: 5%; */
+		width: 24%;
 	}
 }
 @media (max-width:450px) {
