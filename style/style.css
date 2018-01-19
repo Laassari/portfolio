@@ -205,7 +205,7 @@ main .main-info span a {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	main h1 {
 		padding-bottom: 0;
 		font-size: 20px;
@@ -217,8 +217,9 @@ main .main-info span a {
 	}
 	main .main-info img{
 	text-align: center;
-    clear: both;
-    margin-right: 38%;
+	clear: both;
+	margin-right: 11%;
+	max-width: 39%;
 	}
 	main .main-info span{
 		margin: 64px 0%;
@@ -249,7 +250,7 @@ main .main-info span a {
 }
 
 .about-me .part-me {width: 72%;margin: auto;font-size: 1.1em;}
-.about-me .part-me img {width: 32%;max-width: 222px;padding-top: 12px;margin-right: 27px;float: left;shape-outside: circle(50%);}
+.about-me .part-me img {width: 32%;max-width: 222px;padding-top: 12px;margin-right: 27px;float: left;shape-outside: circle(50% at 61% 57%) padding-box;}
 .about-me .part-me .info-me {
 	/* width: 52%;
 	float: right; */
@@ -304,12 +305,14 @@ font-size: 8em;
 @media (max-width:480px) {
 .about-me .part-me .info-me {
   margin-top: 31px;
-  padding: 0 23px;
+  padding: 0 0;
   width: 100%;
   float: none;
 }
-	.about-me .part-me img {
+	.about-me .part-me div {
 	/* display: block; */
+	padding: 0 0;
+	margin: 0;
 	}
 }
 
