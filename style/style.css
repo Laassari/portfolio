@@ -540,7 +540,7 @@ footer >div {
 	max-width: 150px;
 }
 }
-@media (max-width:570px and min-width:451px) {
+@media (max-width:570px) and (min-width:451px) {
 	footer > div:first-of-type {
 		width: 24.9%;
 	}
