@@ -94,11 +94,14 @@ nav .menu li a {
 	color: #000;
 }
 
-/*main view on other screens:*/
+/*main view on other screens*/
 @media (max-width: 768px) { 
 	.wrapper {width: 100%; }
 	nav .menu ul.hide-nav {  margin-top: -374px;}
-	nav .menu i {display: inline-block;float: right;}
+	nav .menu i {
+		display: inline-block;
+		float: right;
+	}
 	nav .menu ul {
 	display: block;
   width: 100%;
@@ -142,11 +145,8 @@ main h1 b {
 	color: #000
 }
 main .main-info {
-	/* margin-right: auto; */
-	/* margin-left: auto; */
 	width: 93%;
 	min-height: 50vh;
-	/* margin-top: 31px; */
 	margin: 31px auto 0;
 }
 
@@ -194,10 +194,6 @@ main .main-info span a {
 /* screen sizes for main */
 
 @media (max-width: 992px) {
-	/* main {
-		background-color: #ddd;
-	} */
-
 	main .main-info p {
 		font-size: 27px;
 	}
@@ -256,8 +252,6 @@ main .main-info span a {
 .about-me .part-me {width: 72%;margin: auto;font-size: 1.1em;}
 .about-me .part-me img {width: 32%;max-width: 222px;padding-top: 12px;margin-right: 27px;float: left;shape-outside: circle(50% at 61% 57%) padding-box;}
 .about-me .part-me .info-me {
-	/* width: 52%;
-	float: right; */
 	margin-top: 50px;
 	padding-top: 17px;
 }
@@ -314,7 +308,6 @@ font-size: 8em;
   float: none;
 }
 	.about-me .part-me div {
-	/* display: block; */
 	padding: 0 0;
 	margin: 0;
 	}
@@ -328,7 +321,6 @@ font-size: 8em;
 /*start Projects section*/
 .projects {
 	background-color: #fed0ae;
-	/* min-height: 100vh; */
 }
 .projects h1 {
 	text-align: center;
@@ -337,9 +329,7 @@ font-size: 8em;
 
 .projects .prjct {
 	height: 322px;
-	/* border: 1px solid; */
 	position: relative;
-	/* overflow: hidden; */
 }
 .projects .prjct > div{
 	display: inline-block;
@@ -472,7 +462,6 @@ padding: 5px 0 5px 16px;
 }
 .contact .contact-container .form form > div {
 	width: 62%;
-	/* margin: 0 auto; */
 	text-align: right;
 	margin-left: 15%;
 }
@@ -556,14 +545,7 @@ footer >div:nth-of-type(odd){
 	max-width: 150px;
 }
 }
-@media (max-width:570px) and (min-width:451px) {
-	footer > div:first-of-type {
-		/* width: 24.9%; */
-	}
-	footer >div {
-		/* width: 24%; */
-	}
-}
+
 @media (max-width: 450px) {
 	footer >div {
 		font-size: 1.1em;
@@ -576,6 +558,5 @@ footer >div:nth-of-type(odd){
 @media (max-width: 550px) {
 		footer span {
 		top: -9px;
-		/* left: 34%; */
 	}
 }
