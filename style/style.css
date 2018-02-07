@@ -17,6 +17,9 @@ a:hover, a:focus, a:active {
     padding-bottom: 2px;
     border-bottom: 1px solid;
 }
+strong {
+	color: #63120b
+}
 
 	/*overiding normalize */
 h1 {margin-top: 0;}
@@ -40,8 +43,7 @@ nav {
 	position: relative;
 	width: 100%;
 	height: 50px;
-	background-color: #252A34;
-	/* overflow: hidden; */
+	background-color: #63120b;
 }
 
 /* main logo */
@@ -89,7 +91,7 @@ nav .menu li:last-of-type {
 
 nav .menu li a {
 	text-decoration: none;
-	color: #fff;
+	color: #cac6c6;
 }
 
 /*main view on other screens:*/
@@ -124,7 +126,7 @@ nav .menu li a {
 
 main {
 	min-height: calc(100vh - 50px);
-	background-color: #c1a0a0;
+	background-color: #fed0ae;
 	position: relative;
 }
 
@@ -136,6 +138,9 @@ main h1 {
 	margin: 0;
 }
 
+main h1 b {
+	color: #000
+}
 main .main-info {
 	/* margin-right: auto; */
 	/* margin-left: auto; */
@@ -167,7 +172,7 @@ main .main-info img {
 
 main .main-info span {
 	width: 132px;
-	background-color: #b8d7e4;
+	background-color: #63120b;
 	display: inline-block;
 	padding: 11px;
 	text-align: center;
@@ -181,8 +186,7 @@ main .main-info span i {
 }
 
 main .main-info span a {
-	color: inherit;
-	text-decoration: none;
+	color: #cac6c6;
 	font-weight: bold;
 }
 
@@ -239,8 +243,7 @@ main .main-info span a {
 /* Start About Section */
 
 .about-me {
-	background-color: #e0e0e0;
-	/* min-height: 100vh; */
+	background-color: #fed0ae;
 }
 
 .about-me h1 {
@@ -324,7 +327,7 @@ font-size: 8em;
 }
 /*start Projects section*/
 .projects {
-	background-color: #e0e0e0;
+	background-color: #fed0ae;
 	/* min-height: 100vh; */
 }
 .projects h1 {
@@ -343,7 +346,7 @@ font-size: 8em;
 }
 
 .projects .prjct .prjct-description {
-	background-color: #fff;
+	background-color: #f3e3d8;
 	width: 32%;
 	height: 100%;
 	position: relative;
@@ -359,7 +362,7 @@ font-size: 8em;
 	position: absolute;
 	right: -100px;
 	top: 0;
-	border-top: 321px solid #FFf;
+	border-top: 321px solid #f3e3d8;
 	border-right: 100px solid transparent;
 }
 
@@ -372,7 +375,7 @@ font-size: 8em;
 	left: -100px;
 	top: -1px;
 	border-top: 321px solid transparent;
-	border-right: 100px solid #fff;
+	border-right: 100px solid #f3e3d8;
 }
 
 .projects .prjct .prjct-description h3 {	
@@ -382,6 +385,27 @@ font-size: 8em;
 .projects .prjct .prjct-description li {
 padding: 5px 0 5px 16px;
 }
+
+.projects .prjct .prjct-description div button{
+	box-shadow: 0 0 10px 1px #252322;
+	margin: 23px 0 15px 20px;
+	outline: 0;
+	background-color: #63120b;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	border-color: transparent;
+	font-size: 1.1em;
+	color: #cac6c6;
+	cursor: pointer;
+	transition: all .1s ease-in;
+}
+
+.projects .prjct .prjct-description div button:active{
+	box-shadow: 0 0 1px 1px #252322;
+}
+
 .projects .prjct-image {
 	width: 68%;
 	height: 100%;
@@ -403,6 +427,7 @@ padding: 5px 0 5px 16px;
 @media (max-width: 700px) {
 	.projects .prjct .prjct-description {
 		width: 100%;
+		text-align: center;
 	}
 	.projects .prjct-image {
   	width: 100%;
@@ -419,7 +444,7 @@ padding: 5px 0 5px 16px;
 /*Contact Me section*/
 .contact {
   position: relative;
-  background-color: #e0e0e0;
+  background-color: #fed0ae;
   min-height: 526px;
 }
 
@@ -465,18 +490,19 @@ padding: 5px 0 5px 16px;
 	border-radius: 5px;
 	padding: 10px 0 10px 5px;
 	border: 1px solid #636060;
+	background-color: rgba(99, 18, 11, 0.18)
 }
 
 .contact form input[type="submit"] {
 	width: 20%;
 	padding: 3px 2px;
-	background-color: #fff;
+	background-color: #63120b;
 	height: 42px;
 	border-radius: 6px;
 	border: 1px solid #636060;
 	font-weight: bold;
 	font-size: 1.1em;
-	color: #333;
+	color: #cac6c6;
 	letter-spacing: 0.5px;
 	margin: 12px 0 5px 85px;
 }
@@ -487,32 +513,22 @@ footer {
 	padding-top: 24px;
 	position: relative;
 	width: 100%;
-	background-color: #9a9a9a
-}
-
-footer span {
-	height: 30px;
-	width: 100px;
-	position: absolute;
-	top: -15px;
-	font-size: 25px;
-	text-align: center;
-	background-color: #4a50d2;
-	color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 0 6px 0 rgb(0, 0, 0);
-	left: 57%;
-	margin-left:  -100px;
+	background-color: #fed0ae
 }
 
 footer >div {
     font-size: 1.2em;
     line-height: 3.1;
-    width: 24%;
+    width: 24.7226%;
     display: inline-block;
     text-align: center;
 }
-
+footer >div:nth-of-type(even){
+	background-color: #63120b
+}
+footer >div:nth-of-type(odd){
+	background-color: #dd7d53
+}
 /*contact section for smalller screens  */
 
 @media (max-width:720px) {
